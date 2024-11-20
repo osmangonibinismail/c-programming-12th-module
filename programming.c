@@ -79,13 +79,35 @@
 // return 0;
 // }
 
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-    char a[100], b[100];
-    scanf("%s %s", &a, &b);
-    strcpy(a, b);
-    printf("%s %s", a, b);
-    return 0;
-}
+// #include <stdio.h>
+// #include <string.h>
+// int main()
+// {
+//     char a[100], b[100];
+//     scanf("%s %s", &a, &b);
+//     strcpy(a, b);
+//     printf("%s %s", a, b);
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// class MyClass {
+// public:
+//     int myNumber;
+//     void display() {
+//         cout << "My Number: " << myNumber << endl;
+//     }
+// };
+
+// int main() {
+//     MyClass* obj = new MyClass(); // Create a dynamic object
+
+//     obj->myNumber = 42; // Access member using the arrow operator
+//     obj->display(); // Access member function using the arrow operator
+
+//     delete obj; // Free the allocated memory
+//     return 0;
+// }
+
