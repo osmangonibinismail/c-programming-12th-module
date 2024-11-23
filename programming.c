@@ -111,3 +111,42 @@
 //     return 0;
 // }
 
+
+// extra
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+// Function to take array input, sort it in descending order, and return it
+vector<int> sort_it(int N) {
+    vector<int> A(N);
+
+    // Taking input for the array inside the function
+    for (int i = 0; i < N; ++i) {
+        cin >> A[i];
+    }
+
+    // Sorting the array in descending order
+    sort(A.rbegin(), A.rend());
+
+    // Returning the sorted array
+    return A;
+}
+
+int main() {
+    // Input the size of the array
+    int N;
+    cin >> N;
+
+    // Call the sort_it function
+    vector<int> sortedArray = sort_it(N);
+
+    // Output the sorted array
+    for (int i = 0; i < N; ++i) {
+        cout << sortedArray[i] << (i == N - 1 ? '\n' : ' ');
+    }
+
+    return 0;
+}
+
